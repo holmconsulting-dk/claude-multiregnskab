@@ -27,10 +27,10 @@ When you are unsure about available options or correct usage for any area or sub
 - `mr user show` — show current logged-in user
 - `mr user logout`
 
-`mr user login` is interactive and **cannot be run by Claude** — it requires the user to type their password directly in the terminal. If a command fails with an auth error, tell the user to:
-1. Open a new terminal window
-2. Run the full path to mr — find it with `find ~/.claude/plugins/cache -name "mr" -type f 2>/dev/null | head -1` and run it as `<full-path> user login`
-3. Return to this Claude session and try again
+`mr user login` is interactive and **cannot be run by Claude** — it requires the user to type their password directly in the terminal. If a command fails with an auth error:
+1. Run `find ~/.claude/plugins/cache -name "mr" -type f 2>/dev/null | head -1` via Bash to get the full path to the binary
+2. Tell the user to open a new terminal window and run `<full-path> user login` with the actual path substituted — never just say `mr user login` as `mr` is not in PATH outside a Claude session
+3. Tell the user to return to this session once logged in
 
 ## Companies
 
