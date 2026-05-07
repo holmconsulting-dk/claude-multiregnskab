@@ -8,12 +8,14 @@ A Claude Code plugin for working with [multiregnskab.dk](https://www.multiregnsk
 
 ## Installation
 
-```
-/plugin marketplace add holmconsulting-dk/claude-multiregnskab
-/plugin install multiregnskab@holmconsulting-dk-claude-multiregnskab
+Run these commands in your terminal:
+
+```bash
+claude plugin marketplace add holmconsulting-dk/claude-multiregnskab
+claude plugin install multiregnskab@holmconsulting-dk-claude-multiregnskab
 ```
 
-The `mr` CLI binary is downloaded automatically when your session starts.
+Then start a new Claude Code session — the `mr` CLI binary is downloaded automatically on first start.
 
 ## First-time setup
 
