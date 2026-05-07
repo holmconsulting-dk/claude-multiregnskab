@@ -65,7 +65,7 @@ Required: `--name`, `--currency`, `--address1`, `--zip`, `--city`, `--country`, 
 Key notes:
 - Default is business customer. Add `--private` for private persons — omitting it silently creates a business customer instead
 - `--lang`: `DA` or `EN`
-- `--payment-terms`: `RUNNING_MONTH` | `NET` | `NET_CASH` | `ALREADY_PAID`
+- `--payment-terms`: `RUNNING_MONTH` | `NET` | `NET_CASH` | `ALREADY_PAID` — this is the type only; use `--payment-days <n>` to set the actual number of days
 - For business customers, add `--cvr <number>` with the CVR number
 - Electronic invoicing requires all three together: `--einvoice`, `--einvoice-type`, and `--einvoice-address`
 
@@ -81,8 +81,8 @@ mr companies list
 mr customers list --company <xid>
 mr customers list --company <xid> "search name"
 
-# 3. Find product type ID (required for every invoice line)
-mr products product-types --company <xid>
+# 3. Find products (use as primary source — shows ID, name, unit, and price)
+mr products list --company <xid>
 
 # 4. Find unit of measure codes (if using quantity/price columns)
 mr invoices units-of-measure --lang DA
@@ -135,8 +135,12 @@ Other flags: `--credit-note`, `--offer`, `--reverse-charge`, `--lines-have-produ
 
 ```
 mr products list --company <xid>
-mr products product-types --company <xid>    # needed for invoice lines
+mr products product-types --company <xid>
 ```
+
+`mr products list` is the primary source — it shows product ID, name, unit of measure, and price. Use it when looking up what to put on an invoice.
+
+`mr products product-types` only shows type ID and name — use it when you need the `productTypeXid` for an invoice line and don't already have it.
 
 ## Bank
 
