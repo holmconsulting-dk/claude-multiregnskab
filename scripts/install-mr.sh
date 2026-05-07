@@ -55,6 +55,7 @@ fi
 if ! "$TARGET" user show > /dev/null 2>&1; then
   echo ""
   echo "multiregnskab: NOT logged in to multiregnskab.dk."
-  echo "   Run 'mr user login' in your terminal before using this plugin."
+  echo "   Open a new terminal window and run: mr user login"
+  echo "   Then return to this session and you are ready to go."
   echo ""
 fi
