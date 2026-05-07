@@ -18,11 +18,13 @@ The `mr` CLI binary is downloaded automatically when your session starts.
 
 ## First-time setup
 
-Log in to your multiregnskab.dk account:
+Log in to your multiregnskab.dk account. Run this directly in your terminal — it is interactive and cannot be run through Claude:
 
 ```
 mr user login
 ```
+
+You only need to do this once. The token is stored locally and refreshed automatically.
 
 ## Usage
 

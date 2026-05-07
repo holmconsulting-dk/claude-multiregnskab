@@ -27,7 +27,7 @@ When you are unsure about available options or correct usage for any area or sub
 - `mr user show` — show current logged-in user
 - `mr user logout`
 
-If a command fails with an auth error, ask the user to run `mr user login`.
+`mr user login` is interactive and **cannot be run by Claude** — it requires the user to type their password directly in the terminal. If a command fails with an auth error, tell the user to open their terminal and run `mr user login` themselves, then retry.
 
 ## Companies
 
