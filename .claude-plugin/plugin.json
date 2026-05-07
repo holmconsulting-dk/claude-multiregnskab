@@ -1,7 +1,7 @@
 {
   "name": "multiregnskab",
   "description": "Work with multiregnskab.dk — manage companies, invoices, customers, bank, and products",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": {
     "name": "Morten Holm",
     "email": "info@holmconsulting.dk"
