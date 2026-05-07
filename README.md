@@ -13,9 +13,10 @@ Run these commands in your terminal:
 ```bash
 claude plugin marketplace add holmconsulting-dk/claude-multiregnskab
 claude plugin install multiregnskab@holmconsulting-dk-claude-multiregnskab
+claude
 ```
 
-Then start a new Claude Code session — the `mr` CLI binary is downloaded automatically on first start.
+Starting a session with `claude` triggers the download of the `mr` CLI binary. If you are not logged in to multiregnskab.dk you will be told at this point.
 
 ## First-time setup
 
