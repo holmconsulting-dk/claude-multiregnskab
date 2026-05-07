@@ -7,7 +7,7 @@
     "email": "info@holmconsulting.dk"
   },
   "repository": "https://github.com/holmconsulting-dk/claude-multiregnskab",
-  "license": "MIT",
+  "license": "AGPL-3.0",
   "hooks": {
     "SessionStart": [
       {
