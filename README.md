@@ -34,7 +34,11 @@ You only need to do this once. The token is stored locally and refreshed automat
 /multiregnskab:multiregnskab
 ```
 
-Then describe what you want in plain language — create an invoice, list customers, check bank balances, and so on.
+Then describe what you want in plain language — in Danish or English. Examples:
+
+> Opret privatkunden Hans Andersen, Markvejen 20, 8000 Århus, med 14 dages kredit
+
+> Opret en faktura til Hans Andersen, han har købt 25 konsulenttimer
 
 ## License
 
