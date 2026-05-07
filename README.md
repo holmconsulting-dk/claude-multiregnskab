@@ -2,6 +2,8 @@
 
 A Claude Code plugin for working with [multiregnskab.dk](https://www.multiregnskab.dk) directly from your Claude session.
 
+This plugin relies on the [cli-multiregnskab](https://github.com/holmconsulting-dk/cli-multiregnskab) command line tool, which is downloaded automatically on first use.
+
 ## Prerequisites
 
 - [Claude Code](https://claude.ai/code) installed
