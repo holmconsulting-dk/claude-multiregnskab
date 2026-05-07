@@ -1,0 +1,15 @@
+{
+  "name": "holmconsulting-dk-claude-multiregnskab",
+  "owner": {
+    "name": "Morten Holm",
+    "email": "info@holmconsulting.dk"
+  },
+  "plugins": [
+    {
+      "name": "multiregnskab",
+      "source": "./",
+      "description": "Work with multiregnskab.dk accounting system",
+      "version": "0.1.0"
+    }
+  ]
+}
