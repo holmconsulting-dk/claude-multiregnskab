@@ -81,7 +81,10 @@ mr companies list
 mr customers list --company <xid>
 mr customers list --company <xid> "search name"
 
-# 3. Find products (use as primary source — shows ID, name, unit, and price)
+# 3. Find product type ID (required for every invoice line)
+mr products product-types --company <xid>
+
+# 3b. Find unit of measure and price (optional, for reference)
 mr products list --company <xid>
 
 # 4. Find unit of measure codes (if using quantity/price columns)
@@ -138,9 +141,9 @@ mr products list --company <xid>
 mr products product-types --company <xid>
 ```
 
-`mr products list` is the primary source — it shows product ID, name, unit of measure, and price. Use it when looking up what to put on an invoice.
+`mr products product-types` gives the `productTypeXid` required on every invoice line — this is NOT the same as the product's own ID from `mr products list`.
 
-`mr products product-types` only shows type ID and name — use it when you need the `productTypeXid` for an invoice line and don't already have it.
+`mr products list` shows product ID, name, unit of measure, and price — use it to look up pricing and units, but you still need `product-types` for the `productTypeXid`.
 
 ## Bank
 
