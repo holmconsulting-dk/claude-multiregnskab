@@ -4,7 +4,7 @@ set -euo pipefail
 BIN_DIR="${CLAUDE_PLUGIN_ROOT}/bin"
 TARGET="${BIN_DIR}/mr"
 REPO="holmconsulting-dk/cli-multiregnskab"
-VERSION="v0.0.5-test"
+VERSION="v1.0.0"
 EXPECTED="${VERSION#v}"  # strip leading 'v' — mr --version outputs e.g. "0.0.3-test"
 
 NEEDS_DOWNLOAD=true
@@ -44,12 +44,9 @@ if [ "$NEEDS_DOWNLOAD" = true ]; then
 
   mkdir -p "$BIN_DIR"
 
-  echo "multiregnskab: downloading ${PATTERN} from ${REPO}@${VERSION}..."
-  gh release download "$VERSION" \
-    --repo "$REPO" \
-    --pattern "$PATTERN" \
-    --output "$TARGET" \
-    --clobber
+  URL="https://github.com/${REPO}/releases/download/${VERSION}/${PATTERN}"
+  echo "multiregnskab: downloading ${PATTERN} from ${URL}..."
+  curl -fsSL "$URL" -o "$TARGET"
 
   chmod +x "$TARGET"
   echo "multiregnskab: mr ${EXPECTED} installed at ${TARGET}"

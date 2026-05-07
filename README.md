@@ -5,7 +5,6 @@ A Claude Code plugin for working with [multiregnskab.dk](https://www.multiregnsk
 ## Prerequisites
 
 - [Claude Code](https://claude.ai/code) installed
-- [gh CLI](https://cli.github.com) installed and authenticated — used to download the `mr` binary on first use
 
 ## Installation
 
