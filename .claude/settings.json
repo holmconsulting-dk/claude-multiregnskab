@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mr *)",
+      "Bash(rm -f /tmp/*)",
+      "Write(/tmp/*)"
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+bin/mr
+bin/mr-*
+.claude/settings.local.json
