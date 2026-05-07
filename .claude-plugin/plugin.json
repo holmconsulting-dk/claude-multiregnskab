@@ -1,7 +1,7 @@
 {
   "name": "multiregnskab",
   "description": "Work with multiregnskab.dk — manage companies, invoices, customers, bank, and products",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "author": {
     "name": "Morten Holm",
     "email": "info@holmconsulting.dk"
@@ -15,6 +15,16 @@
           {
             "type": "command",
             "command": "bash \"${CLAUDE_PLUGIN_ROOT}/scripts/install-mr.sh\""
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/mr-permission.sh\""
           }
         ]
       }
