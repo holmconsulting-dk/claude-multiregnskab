@@ -2,6 +2,7 @@
   "permissions": {
     "allow": [
       "Bash(mr *)",
+      "Bash(*/mr *)",
       "Bash(rm -f /tmp/*)",
       "Write(/tmp/*)"
     ]
