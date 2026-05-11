@@ -9,7 +9,7 @@
       "name": "multiregnskab",
       "source": "./",
       "description": "Work with multiregnskab.dk accounting system",
-      "version": "1.0.0"
+      "version": "1.0.1"
     }
   ]
 }

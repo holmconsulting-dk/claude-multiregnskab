@@ -59,16 +59,15 @@ mr customers create \
   --city "Aarhus" \
   --country DK \
   --lang DA \
-  --payment-terms NET \
   --private
 ```
 
-Required: `--name`, `--currency`, `--address1`, `--zip`, `--city`, `--country`, `--lang`, `--payment-terms`.
+Required: `--name`, `--currency`, `--address1`, `--zip`, `--city`, `--country`, `--lang`.
 
 Key notes:
 - Default is business customer. Add `--private` for private persons — omitting it silently creates a business customer instead
 - `--lang`: `DA` or `EN`
-- `--payment-terms`: `RUNNING_MONTH` | `NET` | `NET_CASH` | `ALREADY_PAID` — this is the type only; use `--payment-days <n>` to set the actual number of days
+- `--payment-terms` (optional): `RUNNING_MONTH` | `NET` | `NET_CASH` | `ALREADY_PAID` — when provided, use `--payment-days <n>` to set the actual number of days
 - For business customers, add `--cvr <number>` with the CVR number
 - Electronic invoicing requires all three together: `--einvoice`, `--einvoice-type`, and `--einvoice-address`
 

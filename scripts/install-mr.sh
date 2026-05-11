@@ -4,7 +4,7 @@ set -euo pipefail
 BIN_DIR="${CLAUDE_PLUGIN_ROOT}/bin"
 TARGET="${BIN_DIR}/mr"
 REPO="holmconsulting-dk/cli-multiregnskab"
-VERSION="v1.0.0"
+VERSION="v1.0.1"
 EXPECTED="${VERSION#v}"  # strip leading 'v' — mr --version outputs e.g. "0.0.3-test"
 
 NEEDS_DOWNLOAD=true
