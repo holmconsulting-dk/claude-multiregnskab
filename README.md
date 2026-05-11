@@ -42,6 +42,15 @@ Then describe what you want in plain language — in Danish or English. Examples
 
 > Opret en faktura til Hans Andersen, han har købt 25 konsulenttimer
 
+## Updating
+
+```bash
+claude plugin marketplace update holmconsulting-dk-claude-multiregnskab
+claude plugin update multiregnskab@holmconsulting-dk-claude-multiregnskab
+```
+
+Then restart Claude Code to download the updated `mr` binary.
+
 ## License
 
 [AGPL-3.0](LICENSE)
