@@ -51,6 +51,23 @@ claude plugin update multiregnskab@holmconsulting-dk-claude-multiregnskab
 
 Then restart Claude Code to download the updated `mr` binary.
 
+## Developing
+
+Clone the repository:
+
+```bash
+git clone https://github.com/holmconsulting-dk/claude-multiregnskab.git
+cd claude-multiregnskab
+```
+
+Start Claude Code pointing at your local copy:
+
+```bash
+claude --plugin-dir /path/to/claude-multiregnskab
+```
+
+Changes to skills and scripts take effect on the next session start — restart Claude Code after making changes.
+
 ## License
 
 [AGPL-3.0](LICENSE)
